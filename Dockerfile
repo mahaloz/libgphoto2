@@ -24,4 +24,3 @@ COPY --from=builder /libgphoto2/examples/.libs/sample-libfuzz /sample-libfuzz
 COPY --from=builder /libgphoto2/libgphoto2/.libs/libgphoto2.so.6 /lib/x86_64-linux-gnu/libgphoto2.so.6
 COPY --from=builder /libgphoto2/libgphoto2_port/libgphoto2_port/.libs/libgphoto2_port.so.12 /lib/x86_64-linux-gnu/libgphoto2_port.so.12
 COPY --from=builder /lib/x86_64-linux-gnu/libltdl.so.7 /lib/x86_64-linux-gnu/libltdl.so.7
-
