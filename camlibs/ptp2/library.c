@@ -1768,6 +1768,9 @@ static struct {
 	/* Stefan Weiberg at SUSE */
 	{"Nikon:Z9",			  0x04b0, 0x0450, PTP_CAP|PTP_CAP_PREVIEW},
 
+	/* Z://github.com/gphoto/libgphoto2/pull/750#issuecomment-1189987634 */
+	{"Nikon:Z30",			  0x04b0, 0x0452, PTP_CAP|PTP_CAP_PREVIEW},
+
 	/* http://sourceforge.net/tracker/?func=detail&aid=3536904&group_id=8874&atid=108874 */
 	/* https://github.com/gphoto/libgphoto2/issues/569 */
 	{"Nikon:V1",    		  0x04b0, 0x0601, PTP_CAP|PTP_NIKON_1},
@@ -2448,10 +2451,9 @@ static struct {
 	{"Canon:EOS R",          		0x04a9, 0x32da, PTP_CAP|PTP_CAP_PREVIEW|PTP_DONT_CLOSE_SESSION},
 
 	/* Christian Muehlhaeuser <muesli@gmail.com> */
-	{"Canon:EOS 2000D",			0x04a9, 0x32e1, PTP_CAP|PTP_CAP_PREVIEW|PTPBUG_DELETE_SENDS_EVENT},
-
+	{"Canon:EOS 2000D",			0x04a9, 0x32e1, PTP_CAP|PTP_CAP_PREVIEW|PTP_DONT_CLOSE_SESSION|PTPBUG_DELETE_SENDS_EVENT},
 	/* https://github.com/gphoto/gphoto2/issues/247, from logfile */
-	{"Canon:EOS 1500D",          		0x04a9, 0x32e1, PTP_CAP|PTP_CAP_PREVIEW|PTP_DONT_CLOSE_SESSION},
+	{"Canon:EOS 1500D",          		0x04a9, 0x32e1, PTP_CAP|PTP_CAP_PREVIEW|PTP_DONT_CLOSE_SESSION|PTPBUG_DELETE_SENDS_EVENT},
 
 	/* from Enno at SUSE */
 	{"Canon:EOS RP",          		0x04a9, 0x32e2, PTP_CAP|PTP_CAP_PREVIEW|PTP_DONT_CLOSE_SESSION},
@@ -2476,6 +2478,8 @@ static struct {
 	{"Canon:EOS M200",			0x04a9, 0x32ef, PTP_CAP|PTP_CAP_PREVIEW},
 	/* https://github.com/gphoto/libgphoto2/issues/781 */
 	{"Canon:EOS Rebel T8i",			0x04a9, 0x32f1, PTP_CAP|PTP_CAP_PREVIEW},
+	/* https://github.com/gphoto/libgphoto2/issues/810 */
+	{"Canon:EOS 850D",			0x04a9, 0x32f1, PTP_CAP|PTP_CAP_PREVIEW},
 	/* from timelapse-view */
 	{"Canon:EOS R5",			0x04a9, 0x32f4, PTP_CAP|PTP_CAP_PREVIEW},
 	/* Steve Rencontre <steve@rsn-tech.co.uk> */
